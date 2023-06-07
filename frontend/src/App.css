@@ -1,0 +1,183 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* CSS for SPAN */
+span {
+  /* background-color:beige;
+  border: 2px solid black; */
+  width: 20%;
+  display: block;
+  font-weight: 600;
+}
+
+.spanDiv {
+  display: flex;
+  flex-direction: row;
+  font-weight: 350;
+}
+
+/* Handling Responsiveness Responsive  */
+.FormComp {
+  width: 50%;
+  background: white;
+  padding: 3;
+  border-radius: 25px;
+}
+
+.UpdateForm {
+  width: 50%;
+  background: white;
+  padding: 1.2rem;
+  border-radius: 25px;
+}
+
+/* Show List Container */
+.List-Container {
+  width: 50%;
+  background: white;
+  padding: 1.2rem;
+  border-radius: 25px;
+  height:fit-content;
+  margin: 2rem 0;
+  font-size: 1.5rem;
+}
+
+.List-Container h2 {
+  font-size: 3rem;
+  width: fit-content;
+  margin: auto;
+}
+
+.Btn-create {
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 300px) {
+  .formWrapper {
+      width: 100%;
+  }
+}
+
+@media (max-width: 1127px) {
+  .FormComp {
+    width: 70%;
+  }
+}
+
+@media (max-width: 668px) {
+  .FormComp {
+    width: 70%;
+  }
+  .spanDiv {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 508px) {
+  .FormComp {
+    width: 90%;
+  }
+}
+
+@media (max-width: 350px) {
+  .FormComp .Comp h2, h1 {
+    font-size: 0.8rem;
+  }
+  .UpdateForm {
+    width: 90%;
+    font-size: 1rem;
+  }
+  .UpdateForm input {
+    font-size: 0.6rem;
+  }
+}
+
+@media (max-width: 1480px) {
+  .List-Container {
+    width: 70%;
+  }
+}
+
+@media (max-width: 1058px) {
+  .List-Container {
+    width: 80%;
+  }
+}
+
+@media (max-width: 925px) {
+  .List-Container {
+    width: 90%;
+    height: 90%;
+  }
+}
+
+@media (max-width: 822px) {
+  .List-Container {
+    font-size: 1rem;
+  }
+  .Btn-home {
+    font-size: 0.6rem;
+  }
+}
+
+@media (max-width: 557px) {
+  .List-Container {
+    font-size: 0.6rem;
+  }
+  .List-Container h2 {
+    font-size: 1.5rem;
+  }
+  .UpdateForm {
+    width: 80%;
+  }
+
+}
+
+@media (max-width: 557px) {
+  /* .List-Container {
+    font-size: 0.6rem;
+    width: 95%;
+    height: 95%;
+  }
+  .List-Container h2 {
+    font-size: 1rem;
+  } */
+}
