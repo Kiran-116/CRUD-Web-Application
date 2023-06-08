@@ -8,7 +8,7 @@ const Update = () => {
 
     useEffect(() => {
         console.log('Read')
-        axios.get(`http://localhost:8081/read/` + id)
+        axios.get(`/read/` + id)
         .then(res => {
             console.log("Result -> ", res.data);
             setValues({
@@ -36,7 +36,7 @@ const Update = () => {
     const handleSubmit = (event) => {
         event.preventDefault();
         console.log("Values -> ", values);
-        axios.put('http://localhost:8081/update/' + id, values)
+        axios.put('/update/' + id, values)
         .then(res => {
             console.log("Result -> ", res);
             console.log(res.data)

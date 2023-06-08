@@ -8,7 +8,7 @@ const Read = () => {
     
     useEffect(() => {
         console.log('Read')
-        axios.get(`http://localhost:8081/read/` + id)
+        axios.get(`/read/` + id)
         .then(res => {
             console.log("Result -> ", res.data);
             setStudent(res.data[0]);

@@ -20,7 +20,7 @@ const Create = () => {
 
         const handleSubmit = (event) => {
             event.preventDefault();
-            axios.post('http://localhost:8081/student', values)
+            axios.post('/student', values)
             .then(res => {
                 console.log(res.data);
                 navigate('/');

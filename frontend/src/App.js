@@ -6,6 +6,9 @@ import Home from './components/Home';
 import Create from './components/Create';
 import Read from './components/Read'; 
 import Update from './components/Update';
+import axios from 'axios';
+
+axios.defaults.baseURL = 'https://crud-react-application.onrender.com';
 
 function App() {
   return (

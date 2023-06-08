@@ -6,13 +6,13 @@ const Home = () => {
     const [ data, setData ] = useState([])
     
     useEffect(() => {
-        axios.get('http://localhost:8081/')
+        axios.get('/')
         .then(res => setData(res.data))
         .catch(err => console.log(err))
     }, [])
 
     const handleDelete = (id) => {
-        axios.delete(`http://localhost:8081/delete/` + id)
+        axios.delete(`/delete/` + id)
         .then(res => {
             window.location.reload();
         })
