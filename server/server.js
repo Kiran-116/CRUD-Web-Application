@@ -8,10 +8,10 @@ app.use(express.json());
 
 // Creating connection with MySQL
 const db = mysql.createConnection({
-    host: "localhost",
-    user: "root",
-    password: "",
-    database: "crud"
+    host: "sql12.freesqldatabase.com",
+    user: "sql12624507",
+    password: "3b5dTgQaA5",
+    database: "sql12624507"
 })
 
 app.get("/", (req, res) => {
@@ -81,6 +81,6 @@ app.delete("/delete/:id", (req, res) => {
     })
 })
 
-app.listen(8081, () => {
+app.listen(3306, () => {
     console.log("Server running on port 8081");
 })
